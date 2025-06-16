@@ -4,17 +4,18 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
 }
 
 body{
     background-color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 a{
     text-decoration: none;
-
 }
 
 li{
@@ -26,12 +27,25 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 140px;
+    padding: 4px 60px;
     margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+    box-shadow: 0 5px 5px rgb(0, 0, 0/ 5%);
+    border-bottom: 1px solid #dbdbdb09;
+    z-index: 999 !important;
+    transition: 1s;
+    padding: 4px 60px;
 }
 
 header .logo{
-    width: 220px;
+    width: 125px;
 }
 
 header .logo img{
@@ -94,7 +108,6 @@ header .header_right .rel .total{
     top: -8px;
     padding-left: 5px;
 }
-
 .banner{
     width: 100%;
     height: 75vh;
@@ -125,7 +138,6 @@ header .header_right .rel .total{
     line-height: 1.1;
     color: black;
 }
-
 .facility{
     width: 100%;
     display: flex;
@@ -149,7 +161,6 @@ header .header_right .rel .total{
 
 .facility .f_item svg{
     position: absolute;
-
 }
 
 .facility .f_item i{
@@ -164,55 +175,58 @@ header .header_right .rel .total{
     line-height: 1.1;
     padding-top: 12px;
 }
-
 #shop_category{
     padding-top: 15px;
     padding-bottom: 40px;
 }
 
-.heading{
+.heading {
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%;
 }
-.heading h3{
-    font-size: 27px;
-    margin-bottom: 13px;
+
+.heading h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
     color: black;
-}
-.paw{
-    text-align: center;
-    position: relative;
     display: block;
-    width: 20%;
-    margin: auto;
+}
+
+.paw {
     font-size: 19px;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
 }
-.paw::before{
+
+.paw::before {
     content: '';
     width: 100px;
     height: 1px;
     background-color: black;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
-.paw::after{
+
+.paw::after {
+    padding: auto;
     content: '';
     width: 100px;
     height: 1px;
     background-color: black;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .shop_category .food{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
+    flex-wrap: wrap;
 }
 .shop_category .food .food_items{
     width: 49%;
@@ -222,6 +236,7 @@ header .header_right .rel .total{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .shop_category .food .food_items .img{
     width: 450px;
@@ -240,14 +255,14 @@ header .header_right .rel .total{
 .food_details .review i{
     color: gold;
 }
-.food_details .review h4{
+.food_details h4{
     font-size: 18px;
     padding: 10px 0;
 }
-.food_details .review h3{
+.food_details h3{
     font-size: 17px;
 }
-.food_details .review p{
+.food_details p{
     font-size: 15px;
     color: gray;
     line-height: 1.7;
@@ -262,7 +277,7 @@ button{
     font-weight: 600;
     padding: 10px 15px;
     border-radius: 3px;
-    transition: 0.3;
+    transition: 0.3s;
     cursor: pointer;
 }
 button:hover{
@@ -276,11 +291,13 @@ button:hover{
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .shop_category .pet_list .single_pet{
     width: 20%;
     text-align: center;
+    margin-bottom: 20px;
 }
 .single_pet .img{
     width: 100%;
@@ -314,7 +331,6 @@ button:hover{
     scale: 1.1;
 }
 
-/* segundo banner*/
 .second_banner{
     width: 100%;
     height: 70vh;
@@ -348,25 +364,26 @@ button:hover{
     padding: 15px 0;
 }
 
-/*Produtos recomendados*/
-
-#features_product{
+#feature_product{
     padding: 70px 0;
 }
-.feature_product{
+
+.feature_products_grid {
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
-    
+    flex-wrap: wrap;
 }
-.feature_product .fp_items{
+
+.feature_products_grid .fp_items{
     background-color: #FFFFFF;
     box-shadow: 0 0 16px rgba(0 0 0 / 5%);
     border-radius: 15px;
     overflow: hidden;
     width: 23%;
+    margin-bottom: 20px;
 }
-.feature_product .fp_items .img{
+.feature_products_grid .fp_items .img{
     width: 85%;
     height: 160px;
     margin: auto;
@@ -375,16 +392,15 @@ button:hover{
     object-fit: cover;
     border-radius: 4px;
 }
-.feature_product .fp_items .img img{
+.feature_products_grid .fp_items .img img{
     width: 90%;
     height: 90%;
     transition: 0.4s;
-
 }
-.feature_product .fp_items .img img:hover{
+.feature_products_grid .fp_items .img img:hover{
     scale: 0.9;
 }
-.feature_product .fp_items .img .tag{
+.feature_products_grid .fp_items .img .tag{
     position: absolute;
     top: 10px;
     left: -40px;
@@ -397,10 +413,10 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     color: #FFFFFF;
 }
-.hidden_icons{
+.fp_items .hidden_icons {
     display: flex;
     flex-direction: column;
     height: 50px;
@@ -408,6 +424,10 @@ button:hover{
     top: 17px;
     right: -150px;
     transition: 0.5s;
+    z-index: 10;
+}
+.fp_items:hover .hidden_icons {
+    right: 0;
 }
 .hidden_icons i{
     width: 30px;
@@ -421,17 +441,15 @@ button:hover{
     align-items: center;
     margin-bottom: 15px;
 }
-.feature_product .fp_items .img:hover .hidden_icons{
-    right: 0;
-}
 .hidden_icons i:hover{
     background-color: #80808039;
 }
 .fp_items .fp_details{
     text-align: center;
     padding-bottom: 30px;
+    border-top: 1px solid #9696961b;
 }
-.fp_items .fp_details .reviews{
+.fp_items .fp_details .review{
     color: gold;
     font-size: 14px;
 }
@@ -439,9 +457,6 @@ button:hover{
     color: gray;
     font-size: 14px;
     font-weight: lighter;
-}
-.fp_items .fp_details{ 
-    border-top: 1px solid #9696961b;
 }
 .fp_items .fp_details h6{
     font-size: 16px;
@@ -455,26 +470,27 @@ button:hover{
     font-size: 17px;
 }
 
-/*2 banners em uma linha*/
 .two_banner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .two_banner .img{
     padding: 28px;
     position: relative;
+    width: 49%;
+    margin-bottom: 20px;
 }
-.two_banner .img{
+.two_banner .img img{
     width: 100%;
+    height: auto;
 }
 .two_banner .img .txt{
     position: absolute;
-    top: -10px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 15%;
-    bottom: 0;
-    margin: auto;
-    width: 50%;
-    height: 100px;
+    width: 70%;
 }
 .two_banner .img .txt h5{
     font-size: 24px;
@@ -487,43 +503,39 @@ button:hover{
     color: black;
     font-weight: bolder;
 }
-.two_banner .img:last-child{
-    color: #FFFFFF;
-}
 .two_banner .img:last-child h4{
     color: #FFFFFF;
 }
 
-/*Novidades*/
-
-.latest_pro .latest_products{
+.latest_pro .latest_product{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.latest_pro .latest_products .lp_items{
-    width: 40%;
+.latest_pro .latest_product .lp_items{
+    width: 48%;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 16px rgba(0 0 0 / 5%);
     background-color: #FFFFFF;
     display: flex;
-    margin: 12px;
+    margin: 12px 0;
     border-radius: 12px;
 }
-.latest_pro .latest_products .lp_items .img{
+.latest_pro .latest_product .lp_items .img{
     cursor: pointer;
     width: 40%;
-    transition: 0.3%;
+    transition: 0.3s;
     position: relative;
+    overflow: hidden;
 }
-.latest_pro .latest_products .lp_items .img img{
+.latest_pro .latest_product .lp_items .img img{
     width: 100%;
 }
-.latest_pro .latest_products .lp_items .img .tag{
+.latest_pro .latest_product .lp_items .img .tag{
     width: 27px;
     height: 27px;
-    background-color: antiquewhite;
+    background-color: rgb(214, 136, 33);
     font-size: 11px;
     font-weight: 600;
     color: #FFFFFF;
@@ -535,5 +547,361 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+.latest_pro .latest_product .lp_items .hidden_icons{
+    position: absolute;
+    right: -55px;
+    top: 10px;
+    cursor: pointer;
+    transition: right 0.3s ease;
+}
+.latest_pro .latest_product .lp_items:hover .hidden_icons{
+    right: 10px;
+}
+.latest_pro .latest_product .lp_items .lp_details{
+    width: 60%;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+.latest_pro .latest_product .lp_items .lp_details h4{
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    padding-right: 15px;
+    letter-spacing: 0.4s;
+    font-weight: 500;
+}
+.latest_pro .latest_product .lp_items .lp_details .review{
+    color: gold;
+}
+.latest_pro .latest_product .lp_items .lp_details .price{
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: darkgreen;
+}
+.latest_pro .latest_product .lp_items .lp_details .price del{
+    font-size: 13px;
+}
+
+.bf_banner{
+    width: 100%;
+    height: 96vh;
+    background-image: url('img/Img/big_banner.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 38px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.bf_banner .bf_food{
+    width: 38%;
+    height: 70%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bf_banner .bf_food img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bf_banner .left_txt{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: right;
+}
+.bf_banner .right_txt{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: left;
+}
+.bf_banner h4{
+    padding: 15px 0 ;
+    color: black;
+    font-size: 22px;
+}
+.bf_banner p{
+    font-size: 15px;
+    color: black;
+}
+
+#footer {
+    padding: 40px 0;
+}
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.footer_top .img{
+    width: 130px;
+    cursor: pointer;
+}
+.footer_top .img img{
+    width: 100%;
+}
+.footer_top .menu{
+    padding-left: 10%;
+}
+.footer_top .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer_top .menu ul li{
+    padding: 0 10px;
+}
+.footer_top .menu ul li a{
+    color: black;
+    font-size: 14px;
+    transition: 0.4s;
+}
+.footer_top .menu ul li a:hover{
+    color: gold;
+}
+.footer_top .icons i{
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.footer_top .icons i:hover{
+    color: gold;
+}
+.footer_top .icons i:last-child{
+    padding-right: 0
+}
+.footer_bottom{
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+.footer_bottom .payment_link{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.footer_bottom .payment_link i{
+    padding: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.footer_bottom .payment_link i:hover{
+    color: gold;
+}
+.footer_bottom small{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+    .w-70 {
+        width: 90%;
+    }
+    header {
+        padding: 4px 30px;
+    }
+    .shop_category .food .food_items .img {
+        width: 40%;
+    }
+    .food_details {
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    .bf_banner .left_txt,
+    .bf_banner .right_txt {
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    header .menu {
+        display: none;
+    }
+    header .header_right {
+        padding-right: 0;
+    }
+    header .header_right i {
+        margin-left: 15px;
+    }
+    .banner .banner_txt {
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .banner .banner_txt h1 {
+        font-size: 48px;
+    }
+    .facility {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .facility .f_item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .shop_category .food .food_items {
+        width: 100%;
+    }
+    .shop_category .pet_list .single_pet {
+        width: 48%;
+    }
+    .second_banner .txt {
+        width: 50%;
+    }
+    .second_banner .txt h2 {
+        font-size: 40px;
+    }
+    .feature_products_grid .fp_items {
+        width: 48%;
+    }
+    .two_banner .img {
+        width: 100%;
+    }
+    .two_banner .img .txt {
+        width: 90%;
+        left: 5%;
+    }
+    .latest_pro .latest_product .lp_items {
+        width: 100%;
+    }
+    .bf_banner .left_txt,
+    .bf_banner .right_txt {
+        width: 45%;
+        padding: 10px;
+    }
+    .bf_banner .bf_food {
+        width: 60%;
+        height: auto;
+    }
+    .footer_top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_top .logo {
+        margin-bottom: 20px;
+    }
+    .footer_top .menu {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    .footer_top .menu ul {
+        flex-direction: column;
+    }
+    .footer_top .menu ul li {
+        padding: 5px 0;
+    }
+    .footer_top .icons {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+    .banner .banner_txt h1 {
+        font-size: 36px;
+    }
+    .shop_category .pet_list .single_pet {
+        width: 45%;
+    }
+    .second_banner .txt h2 {
+        font-size: 32px;
+    }
+    .feature_products_grid .fp_items {
+        width: 90%;
+    }
+    .bf_banner {
+        height: auto;
+        padding: 20px 0;
+    }
+    .bf_banner .bf_food {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .bf_banner .left_txt,
+    .bf_banner .right_txt {
+        width: 80%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .bf_banner .right_txt {
+        text-align: center;
+    }
+    .footer_bottom .payment_link {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .banner_txt p {
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+    .banner .banner_txt h1 {
+        font-size: 28px;
+    }
+    .facility .f_item {
+        width: 90%;
+    }
+    .shop_category .food .food_items .img {
+        width: 100%;
+        height: auto;
+    }
+    .shop_category .food .food_items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .food_details {
+        padding: 15px;
+    }
+    .shop_category .pet_list .single_pet {
+        width: 90%;
+    }
+    .second_banner .txt h2 {
+        font-size: 26px;
+    }
+    .feature_products_grid .fp_items {
+        width: 95%;
+    }
+    .latest_pro .latest_product .lp_items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .latest_pro .latest_product .lp_items .img {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .latest_pro .latest_product .lp_items .lp_details {
+        width: 90%;
+        padding: 10px;
+    }
+    .footer_bottom .payment_link i {
+        font-size: 22px;
+        padding: 10px;
+    }
 }
