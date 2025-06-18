@@ -25,17 +25,30 @@
                 <li><a href="#footer">Contato</a></li>
             </ul>
         </div>
+
         <div class="header_right">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+
+                <form id="search-form">
+                    <input type="text" placeholder="Pesquisar no site...">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
             <div class="rel">
                 <i class="fa-solid fa-heart"></i>
                 <span class="num">3</span>
             </div>
+
             <div class="rel">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span class="num">3</span>
                 <!--<span class="total">R$34,90</span>-->
             </div>
+
             <div class="icon">
                 <a href="login.html" title="Login">
                     <i class="fa-solid fa-user"></i>
@@ -562,6 +575,20 @@
             }
         }
       </script>
+      
+      <script>
+         searchIcon = document.getElementById('search-icon');
+        const searchForm = document.getElementById('search-form');
+
+         searchIcon.addEventListener('click', function() {
+        // Alterna entre mostrar e esconder o formulário
+        if (searchForm.style.display === "none") {
+            searchForm.style.display = "flex";
+        } else {
+            searchForm.style.display = "none";
+        }
+         });
+        </script>
 
 </body>
 </html>

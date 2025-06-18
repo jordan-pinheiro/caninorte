@@ -93,10 +93,46 @@ header .header_right i:hover{
 
 header .header_right .rel{
     position: relative;
+    transition: all 0.3s ease;
+    margin-top: 8px;
 }
 
 header .header_right .icon{
     position: relative;
+}
+
+#search-form {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+#search-form input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f8f8f8;
+}
+#search-form button {
+    background-color: rgb(255, 230, 0);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#search-form button:hover {
+    background-color: rgb(124, 95, 0);
 }
 
 /*header .login-form{
