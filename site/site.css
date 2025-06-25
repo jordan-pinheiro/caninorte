@@ -511,98 +511,83 @@ button:hover{
 }
 
 .feature_products_grid .fp_items{
-    background-color: #FFFFFF;
-    box-shadow: 0 0 16px rgba(0 0 0 / 5%);
-    border-radius: 15px;
+    width: 48%;
+    position: relative;
     overflow: hidden;
-    width: 23%;
-    margin-bottom: 20px;
+    box-shadow: 0 0 16px rgba(0 0 0 / 5%);
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 12px 0;
+    border-radius: 12px;
 }
 .feature_products_grid .fp_items .img{
-    width: 85%;
-    height: 160px;
-    margin: auto;
-    position: relative;
     cursor: pointer;
-    object-fit: cover;
-    border-radius: 4px;
+    width: 40%;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
 }
 .feature_products_grid .fp_items .img img{
-    width: 90%;
-    height: 90%;
-    transition: 0.4s;
+    width: 100%;
 }
-.feature_products_grid .fp_items .img img:hover{
-    scale: 0.9;
-}
+
 .feature_products_grid .fp_items .img .tag{
-    position: absolute;
-    top: 10px;
-    left: -40px;
-    width: 50px;
-    height: 50px;
-    background-color: lightseagreen;
-    border-radius: 50%;
-    font-size: 13px;
+    width: 27px;
+    height: 27px;
+    background-color: rgb(214, 136, 33);
+    font-size: 11px;
     font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: #FFFFFF;
-}
-.fp_items .hidden_icons {
-    display: flex;
-    flex-direction: column;
-    height: 50px;
-    position: absolute;
-    top: 17px;
-    right: -150px;
-    transition: 0.5s;
-    z-index: 10;
-}
-.fp_items:hover .hidden_icons {
-    right: 0;
-}
-.hidden_icons i{
-    width: 30px;
-    height: 30px;
     padding: 15px;
-    background-color: #8080801d;
-    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
 }
-.hidden_icons i:hover{
-    background-color: #80808039;
+.feature_products_grid .fp_items .hidden_icons {
+    position: absolute;
+    right: -55px;
+    top: 10px;
+    cursor: pointer;
+    transition: right 0.3s ease;
 }
-.fp_items .fp_details{
-    text-align: center;
-    padding-bottom: 30px;
-    border-top: 1px solid #9696961b;
+.feature_products_grid .fp_items:hover .hidden_icons {
+    right: 10px;
 }
-.fp_items .fp_details .review{
+
+.feature_products_grid .fp_items .fp_details{
+    width: 60%;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+.feature_products_grid .fp_items .fp_details .review{
     color: gold;
     font-size: 14px;
 }
-.fp_items .fp_details .sub_category{
+.feature_products_grid .fp_items .fp_details .sub_category{
     color: gray;
     font-size: 14px;
     font-weight: lighter;
 }
-.fp_items .fp_details h6{
+.feature_products_grid .fp_items .fp_details h6{
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    padding-right: 15px;
+    letter-spacing: 0.4s;
+    font-weight: 500;
+}
+.feature_products_grid .fp_items .fp_details .price del{
+    padding: 14px 0;
     font-size: 16px;
     font-weight: 500;
-    padding: 8px 0;
+    color: darkgreen;
 }
-.fp_items .fp_details .price del{
-    font-size: 14px;
-}
-.fp_items .fp_details .price span{
+.feature_products_grid .fp_items .fp_details .price span{
     font-size: 17px;
+    color: darkgreen;
 }
 
 .two_banner{
@@ -792,26 +777,29 @@ button:hover{
     width: 100%;
 }
 .footer_top .menu{
-    padding-left: 10%;
+    padding-left: 0%;
 }
 .footer_top .menu ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .footer_top .menu ul li{
     padding: 0 10px;
+    text-align: center;
 }
 .footer_top .menu ul li a{
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     transition: 0.4s;
 }
 .footer_top .menu ul li a:hover{
     color: gold;
 }
 .footer_top .icons i{
-    padding: 0 15px;
+    padding: 0 20px;
+    font-size: 30px;
     cursor: pointer;
     transition: 0.4s;
 }
