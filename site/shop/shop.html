@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="shop.js">
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <header id="myHeader">
+        <div class="logo">
+            <a href="/site/site.html">
+                <img src="/site/img/Img/logo.png" alt="Logo - Voltar para Shop">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/site/site.html">Tudo</a></li>
+                <li><a href="#">Cachorros</a></li>
+                <li><a href="#">Gatos</a></li>
+                <li><a href="#">Pássaros</a></li>
+                <li><a href="#">Peixes</a></li>
+                <li><a href="#">Outros Pets</a></li>
+                <li><a href="#">Lojas</a></li>
+                <li><a href="#">Promoção</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="header_right">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+
+                <form id="search-form">
+                    <input type="text" placeholder="Pesquisar no site...">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="rel">
+                <a href="/site/shop/favoritos/favoritos.html" title="Login">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="num">3</span>
+                </a>
+            </div>
+
+            <div class="rel">
+                <a href="/site/shop/carrinho/carrinho.html" title="Login">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="num">3</span>
+                </a>
+                <!--<span class="total">R$34,90</span>-->
+            </div>
+
+            <div class="icon">
+                <a href="/site/login/login.html" title="Login">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>    
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+         <!--  footer top-->
+            <div class="footer_top w-70">
+                <div class="img">
+                    <img src="img/Img/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="/site/login/login.html"> Minha Conta</a></li>
+                        <li><a href="#"> Ver Carrinho</a></li>
+                        <li><a href="#"> Favoritos</a></li>
+                        <li><a href="#"> Status do Pedido</a></li>
+                    </ul>
+                </div>
+            <div class="icons">
+                
+                <a href="https://wa.me/+559293921850?text=Olá,%20gostaria%20de%20mais%20informações!">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/caninorte_petshop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="payment_link">
+                <i class="fa-brands fa-paypal"></i>
+                <i class="fa-brands fa-google-pay"></i>
+                <i class="fa-brands fa-apple-pay"></i>
+                <i class="fa-brands fa-amazon-pay"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-visa"></i>
+            </div>
+            <small>Designed by Jordan Pinheiro</small>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function() {myFuction()};
+        var header = document.getElementById('myHeader')
+        var sticky = header.offsetTop;
+
+        function myFuction(){
+            if(window.pageYOffset > sticky){
+                header.classList.add('sticky');
+            }
+            else{ 
+                header.classList.remove('sticky');
+            }
+        }
+      </script>
+      
+      <script>
+         searchIcon = document.getElementById('search-icon');
+        const searchForm = document.getElementById('search-form');
+
+         searchIcon.addEventListener('click', function() {
+        // Alterna entre mostrar e esconder o formulário
+        if (searchForm.style.display === "none") {
+            searchForm.style.display = "flex";
+        } else {
+            searchForm.style.display = "none";
+        }
+         });
+        </script>
+</body>
+</html>
