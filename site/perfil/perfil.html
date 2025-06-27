@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/site/perfil/perfil.css">
+</head>
+<body>
+  <div class="header">
+        <div class="logo">
+            <a href="/site/shop/shop.html">
+                <img src="/site/img/Img/logo.png" alt="Voltar para Shop">
+            </a>
+        </div>
+        <div><i class="fas fa-lock"></i> Ambiente seguro</div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Minha conta</h3>
+      <ul>
+        <li><i class="fas fa-user"></i> Olá, <span id="userSidebar">Usuário</span></li>
+        <li><a href=""><i class="fas fa-box"></i> Minhas compras</a></li>
+        <li><a href="/site/shop/favoritos/favoritos.html"><i class="fas fa-heart"></i> Favoritos</a></li>
+        <li><a href=""><i class="fas fa-credit-card"></i> Cartões</a></li>
+        <li><a href=""><i class="fas fa-map-marker-alt"></i> Endereços</a></li>
+        <li><a href=""><i class="fas fa-lock"></i> Segurança</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <h2 id="userGreeting">Olá, Usuário</h2>
+      <p>Confira tudo sobre a sua conta.</p>
+      <div class="actions">
+        <a href="/site/login/login.html">✏️ Editar Meus dados</a>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Minhas compras</h4>
+          <span>0</span>
+        </div>
+        <div class="card">
+          <h4>Favoritos</h4>
+          <span>0</span>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Definindo nome do usuário dinamicamente (ex: pegando de localStorage)
+    let nomeUsuario = localStorage.getItem('nomeUsuario');
+    if (!nomeUsuario) {
+      nomeUsuario = prompt("Digite seu nome:");
+      localStorage.setItem('nomeUsuario', nomeUsuario);
+    }
+
+    document.getElementById('userGreeting').textContent = `Olá, ${nomeUsuario}`;
+    document.getElementById('userSidebar').textContent = nomeUsuario;
+  </script>
+</body>
+</html>
+
+
+
+

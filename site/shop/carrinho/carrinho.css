@@ -35,7 +35,7 @@ header{
     padding: 4px 60px;
     margin-bottom: 5px;
     transition: all 0.3s ease;
-    background: linear-gradient(to right, #ffffff, #ffe600); /* Cor nova */
+    background: linear-gradient(to right, #ffffff, #86c9ff);
     color: rgb(0, 0, 0);
 }
 

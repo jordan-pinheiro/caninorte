@@ -35,7 +35,7 @@ header{
     padding: 4px 60px;
     margin-bottom: 5px;
     transition: all 0.3s ease;
-    background: linear-gradient(to right, #ffffff, #ffe600); /* Cor nova */
+    background: linear-gradient(to right, #ffffff, #86c9ff); /* Cor nova */
     color: rgb(0, 0, 0);
 }
 
@@ -153,6 +153,98 @@ header .header_right .rel .num{
     font-size: 10px;
 }
 
+.container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.sidebar {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li.active {
+  color: #009999;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  background-color: #fafafa;
+  max-width: 500px;
+  margin: auto;
+}
+
+.box .heart-img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.box .btn {
+  background-color: #009999;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.box .btn:hover {
+  background-color: #007777;
+}
 
 
 
