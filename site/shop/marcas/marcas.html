@@ -4,8 +4,309 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="marcas.css">
 </head>
 <body>
     
+    <header id="myHeader">
+        <div id="sidebarOverlay"></div>
+
+        <aside class="sidebar" id="sidebarMenu">
+            <div class="sidebar-header">
+                <span>Olá, Jordan!</span>
+                <button id="closeSidebar">&times;</button>
+            </div>
+
+            <div class="sidebar-links">
+                <div class="top-links">
+                    <a href="/site/shop/perfil/perfil.html"><strong>Minha conta</strong></a>
+                    <a href="/site/shop/Pedidos/pedidos.html">Pedidos</a>
+                </div>
+
+                <hr>
+
+                <a href="/site/site.html">Blog</a>
+                <a href="#" class="highlight">Promoções</a>
+                <a href="/site/shop/marcas/marcas.html">Marcas que trabalhamos</a>
+
+                <hr>
+                    <ul>
+                        
+                        <li><a href="#"><i class="fa-solid fa-dog"></i>Cachorros</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cat"></i>Gatos</a></li>
+                        <li><a href="#"><i class="fa-solid fa-crow"></i>Pássaros</a></li>
+                        <li><a href="#"><i class="fa-solid fa-fish"></i>Peixes</a></li>
+                        <li><a href="#"><i class="fa-solid fa-carrot"></i>Outros Pets</a></li>
+                        <li><a href="/site/shop/lojas/lojas.html"><i class="fa-solid fa-store"></i>Lojas</a></li>
+                        <li><a href="#" class="highlight"><i class="fa-solid fa-money-bill-wave"></i>Promoção</a></li>
+                
+                    </ul>
+                <hr>
+
+               
+                <div class="dropdown-servicos">
+                    <div class="dropdown-toggle">
+                        <i class="fa-solid fa-dog"></i> Serviços Pet
+                        <i class="fa fa-chevron-down arrow-icon"></i>
+                    </div>
+                    <ul class="dropdown-content">
+                        <li><a href="https://wa.me/+559293921850?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20banho%20e%20tosa.">Banho e Tosa</a></li>
+                    </ul>
+                </div>
+
+                <a href="/site/shop/carrinho/carrinho.html"><i class="fa-solid fa-store"></i> Retire na loja</a>
+
+                <hr>
+
+                <a href="#">Atendimento</a>
+                <a href="/site/shop/sobre/sobre.html">Sobre</a>
+                <a href="#">Política de Privacidade</a>
+
+                <hr>
+
+                <a href="#" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Sair da sua conta</a>
+            </div>
+        </aside>
+
+        <div class="logo">
+            <a href="/site/site.html">
+                <img src="/site/img/Img/logo.png" alt="Voltar para Shop">
+            </a>
+        </div>
+
+        <div class="menu">
+            <div class="search-bar">
+                <input type="text" placeholder="Para seu pet, procure aqui">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="header_right">
+             <div class="user-menu" onclick="toggleMenu()">
+                <i class="fas fa-user-circle"></i>
+                <span>Olá, jordan <i class="fas fa-chevron-down"></i></span>
+                <div class="dropdown" id="userDropdown">
+                        <div class="dropdown-item"><a href="/site/shop/perfil/perfil.html"><i class="fas fa-user"></i> Minha Conta</a></div>
+                        <div class="dropdown-item"><a href="/site/shop/Pedidos/pedidos.html"><i class="fas fa-box"></i> Pedidos</a></div>
+                        <hr>
+                        <div class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sair</div>
+                </div>
+            </div>
+
+            <div class="rel">
+                <a href="/site/shop/favoritos/favoritos.html" title="Favoritos">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+            </div>
+
+            <div class="rel">
+                <a href="/site/shop/carrinho/carrinho.html" title="Carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="num">3</span>
+                </a>
+                
+            </div>
+        </div>    
+    </header>
+    <nav>
+            <a href="#" id="openSidebar"><i class="fa-solid fa-bars"></i> Todos</a>
+            <a href="#">Cachorros</a>
+            <a href="#">Gatos</a>
+            <a href="#">Pássaros</a>
+            <a href="#">Peixes</a>
+            <a href="#">Outros pets</a>
+            <a href="/site/shop/lojas/lojas.html">Lojas</a>
+            <a href="/site/site.html">Blog</a>
+            <a href="#" style="color: #f77b0e; font-weight: bold;">Promoções</a>
+    </nav>
+
+    <section class="brand-grid">
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/whiskas.png" alt="Whiskas">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/pedigree.png" alt="Pedigree">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/golden.png" alt="Golden">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/royal.png" alt="Royal Canin">
+            </a>
+        </div>
+         <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/cibau.png" alt="Whiskas">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/finotrato.png" alt="Pedigree">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/croc.png" alt="Golden">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/biofresh.png" alt="Royal Canin">
+            </a>
+        </div>
+         <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/kanina.png" alt="Whiskas">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/must.png" alt="Pedigree">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/confianca.png" alt="Golden">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/alldog.png" alt="Royal Canin">
+            </a>
+        </div>
+         <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/aurus.png" alt="Whiskas">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/billy.png" alt="Pedigree">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/chanin.png" alt="Golden">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/dogchow.png" alt="Royal Canin">
+            </a>
+        </div>
+         <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/nd.png" alt="Whiskas">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/faro.png" alt="Pedigree">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/nature.png" alt="Golden">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/granplus.png" alt="Royal Canin">
+            </a>
+        </div>
+         <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/supra.png" alt="Whiskas">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/monello.png" alt="Pedigree">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/three.png" alt="Golden">
+            </a>
+        </div>
+
+        <div class="brand-box">
+            <a href="/site/shop/shop.html" class="brand-btn">
+            <img src="/site/img/marcas/sanpet.png" alt="Royal Canin">
+            </a>
+        </div>
+
+    </section>
+
+    <script>
+        function toggleMenu() {
+        const dropdown = document.getElementById("userDropdown");
+        dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+        }
+
+        // Fechar o menu ao clicar fora
+        document.addEventListener("click", function(event) {
+        const menu = document.querySelector(".user-menu");
+        const dropdown = document.getElementById("userDropdown");
+        if (!menu.contains(event.target)) {
+            dropdown.style.display = "none";
+        }
+        });
+  </script>
+    <script>
+        const sidebar = document.getElementById("sidebarMenu");
+        const overlay = document.getElementById("sidebarOverlay");
+        const openBtn = document.getElementById("openSidebar"); // botão “Todos”
+        const closeBtn = document.getElementById("closeSidebar");
+
+        openBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            sidebar.classList.add("active");
+            overlay.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    </script>
+    <script>
+        const toggleDropdown = document.querySelector('.dropdown-toggle');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        toggleDropdown.addEventListener('click', () => {
+            dropdownContent.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

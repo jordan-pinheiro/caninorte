@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+    <link rel="stylesheet" href="atendimento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<section class="central-cliente">
+  <div class="top-banner">
+    <h1>Central Amiga do Cliente</h1>
+    <p>Aqui você encontra as informações dos nossos serviços e tira suas dúvidas.</p>
+  </div>
+
+  <div class="acesso-rapido">
+        <h2>Olá, aqui você tem acesso rápido para:</h2>
+        <div class="icones-grid">
+        <div class="item" onclick="abrirModal('Devolução', 'Solicite a devolução de um produto de forma simples e rápida.', 'icon1.svg')">
+            <img src="icon1.svg"><p>Devolução</p>
+        </div>
+        <div class="item" onclick="abrirModal('Acompanhe a entrega', 'Veja em tempo real onde está o seu pedido.', 'icon2.svg')">
+            <img src="icon2.svg"><p>Acompanhe a entrega</p>
+        </div>
+        <div class="item" onclick="abrirModal('Troque seu produto', 'Precisa trocar? Veja como funciona o processo.', 'icon3.svg')">
+            <img src="icon3.svg"><p>Troque seu produto</p>
+        </div>
+        <div class="item" onclick="abrirModal('Serviços Pet', 'Clique aqui e conheça os serviços em parceria com a Pet Anjo.', 'icon4.svg')">
+            <img src="icon4.svg"><p>Serviços Pet</p>
+        </div>
+        <div class="item" onclick="abrirModal('Facilidades nas lojas', 'Descubra os serviços exclusivos disponíveis nas lojas físicas.', 'icon5.svg')">
+            <img src="icon5.svg"><p>Facilidades nas lojas</p>
+        </div>
+        </div>
+  </div>
+
+  <div class="busca-ajuda">
+        <h3>Como podemos ajudar? Você pode pesquisar por palavra-chave:</h3>
+        <form>
+        <input type="text" placeholder="Exemplo: entrega, pedido">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+  </div>
+
+  <h3 class="duvidas-title">Dúvidas frequentes</h3>
+</section>
+
+<!-- Modal dinâmico -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <img id="modal-icon" src="" alt="Ícone" style="width: 50px; margin-bottom: 10px;">
+    <h3 id="modal-title"></h3>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script>
+  function abrirModal(titulo, texto, icone) {
+    document.getElementById('modal-title').textContent = titulo;
+    document.getElementById('modal-text').textContent = texto;
+    document.getElementById('modal-icon').src = icone;
+    document.getElementById('popupModal').style.display = 'flex';
+  }
+
+  function fecharModal() {
+    document.getElementById('popupModal').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('popupModal');
+    if (event.target === modal) {
+      fecharModal();
+    }
+  }
+</script>
+
+</body>
+</html>
