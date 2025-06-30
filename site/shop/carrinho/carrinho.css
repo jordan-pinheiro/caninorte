@@ -90,6 +90,20 @@ header .header_right i{
     color: black;
     margin-left: 20px;
 }
+.header_right .secure-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgb(0, 0, 0); /* ou preto se o fundo for claro */
+  font-size: 14px;
+}
+
+.header_right .secure-info i {
+  font-size: 16px;
+  color: rgb(0, 0, 0); /* ou ajuste conforme seu tema */
+}
+
+
 header .header_right i:hover{
     color: gold;
 }
@@ -153,6 +167,103 @@ header .header_right .rel .num{
     font-size: 10px;
 }
 
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.carrinho {
+  flex: 1;
+  max-width: 65%;
+}
+
+.resumo {
+  width: 30%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.produto {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.produto img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.produto-info {
+  flex: 1;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.preco {
+  font-weight: bold;
+}
+
+.cep {
+  display: flex;
+  margin-top: 30px;
+}
+
+.cep input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+}
+
+.cep button {
+  padding: 10px 20px;
+  background-color: #009999;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.resumo h3 {
+  margin-top: 0;
+}
+
+.resumo .linha {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.btn-finalizar {
+  background-color: #7CB342;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.btn-finalizar:hover {
+  background-color: #689f38;
+}
 
 
 

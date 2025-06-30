@@ -41,7 +41,19 @@ li{
 #sidebarOverlay.active {
   display: block;
 }
-
+.sobre-container .icons i{
+    padding: 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #000;
+}
+.sobre-container .icons i:hover{
+    color: gold;
+}
+.sobre-container .icons i:last-child{
+    padding-right: 0
+}
 /* Sidebar */
 .sidebar {
   position: fixed;
