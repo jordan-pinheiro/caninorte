@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atendimento</title>
-    <link rel="stylesheet" href="atendimento.css">
+    <title>Shop</title>
+    <link rel="stylesheet" href="politica.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 </head>
 <body>
-  <header id="myHeader">
+
+    <header id="myHeader">
         <div id="sidebarOverlay"></div>
 
         <aside class="sidebar" id="sidebarMenu">
@@ -121,124 +121,3 @@
             <a href="/site/site.html">Blog</a>
             <a href="#" style="color: #f77b0e; font-weight: bold;">Promoções</a>
     </nav>
-    <script>
-        function toggleMenu() {
-        const dropdown = document.getElementById("userDropdown");
-        dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-        }
-
-        // Fechar o menu ao clicar fora
-        document.addEventListener("click", function(event) {
-        const menu = document.querySelector(".user-menu");
-        const dropdown = document.getElementById("userDropdown");
-        if (!menu.contains(event.target)) {
-            dropdown.style.display = "none";
-        }
-        });
-  </script>
-    <script>
-        const sidebar = document.getElementById("sidebarMenu");
-        const overlay = document.getElementById("sidebarOverlay");
-        const openBtn = document.getElementById("openSidebar"); // botão “Todos”
-        const closeBtn = document.getElementById("closeSidebar");
-
-        openBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            sidebar.classList.add("active");
-            overlay.classList.add("active");
-        });
-
-        closeBtn.addEventListener("click", () => {
-            sidebar.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-
-        overlay.addEventListener("click", () => {
-            sidebar.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-    </script>
-    <script>
-        const toggleDropdown = document.querySelector('.dropdown-toggle');
-        const dropdownContent = document.querySelector('.dropdown-content');
-
-        toggleDropdown.addEventListener('click', () => {
-            dropdownContent.classList.toggle('active');
-        });
-    </script>
-
-<section class="central-cliente">
-  <div class="top-banner">
-    <h1>Central do Cliente</h1>
-    <p>Aqui você encontra as informações dos nossos serviços e tira suas dúvidas.</p>
-  </div>
-
-  <div class="acesso-rapido">
-        <h2>Olá, aqui você tem acesso rápido para:</h2>
-        <div class="icones-grid">
-        <div class="item" onclick="abrirModal('Devolução', 'Solicite a devolução de um produto de forma simples e rápida.', 'fa-bars-progress')">
-            <i class="fa-solid fa-bars-progress"></i><p>Devolução</p>
-        </div>
-        <div class="item" onclick="abrirModal('Acompanhe a entrega', 'Veja em tempo real onde está o seu pedido.', 'fa-truck')">
-            <i class="fa-solid fa-truck"></i><p>Acompanhe a entrega</p>
-        </div>
-        <div class="item" onclick="abrirModal('Troque seu produto', 'Precisa trocar? Veja como funciona o processo.<a href=\'/site/shop/servicos/petanjo.html\'>Clique aqui</a> para saber mais.', 'fa-bag-shopping')">
-            <i class="fa-solid fa-bag-shopping"></i><p>Troque seu produto</p>
-        </div>
-        <div class="item" onclick="abrirModal('Serviços Pet','Conheça nossos serviços. <a href=\'https://wa.me/+559293921850?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20banho%20e%20tosa!\'  target=\'_blank\'>Clique aqui</a> para saber mais.','fa-scissors')">
-          <i class="fa-solid fa-scissors"></i><p>Serviços Pet</p>
-          </div>
-
-        <div class="item" onclick="abrirModal('Facilidades nas lojas', 'Descubra os serviços exclusivos disponíveis nas lojas físicas.<a href=\'/site/shop/lojas/lojas.html\'>Clique aqui</a> para saber mais.', 'fa-store')">
-            <i class="fa-solid fa-store"></i><p>Facilidades nas lojas</p>
-        </div>
-        </div>
-  </div>
-
-  <div class="busca-ajuda">
-        <h3>Como podemos ajudar? Você pode pesquisar por palavra-chave:</h3>
-        <form>
-        <input type="text" placeholder="Exemplo: entrega, pedido">
-        <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-  </div>
-
-  <h3 class="duvidas-title">Dúvidas frequentes</h3>
-</section>
-
-<!-- Modal dinâmico -->
-<div id="popupModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="fecharModal()">&times;</span>
-    <i id="modal-icon" class="fa-solid fa" style="font-size: 50px; margin-bottom: 10px;"></i>
-    <h3 id="modal-title"></h3>
-    <p id="modal-text"></p>
-  </div>
-</div>
-
-<script>
-  function abrirModal(titulo, textoHTML, iconeClasse) {
-    document.getElementById('modal-title').textContent = titulo;
-    document.getElementById('modal-text').innerHTML = textoHTML;
-    
-    const icon = document.getElementById('modal-icon');
-    icon.className = `fa-solid ${iconeClasse}`;
-    
-    document.getElementById('popupModal').style.display = 'flex';
-  }
-
-  function fecharModal() {
-    document.getElementById('popupModal').style.display = 'none';
-  }
-
-  window.onclick = function(event) {
-    const modal = document.getElementById('popupModal');
-    if (event.target === modal) {
-      fecharModal();
-    }
-  }
-</script>
-
-
-</body>
-</html>
