@@ -254,7 +254,36 @@ header{
     transition: 1s;
     padding: 4px 60px;
 }
-
+.banner{
+    width: 100%;
+    height: 70vh;
+    background-image: url('/site/img/Img/banner.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner .banner_txt{
+    width: 33%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    bottom: -15px;
+    margin: auto;
+}
+.banner .banner_txt p{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    color: black;
+}
+.banner .banner_txt h1{
+    font-size: 25px;
+    line-height: 1.1;
+    color: black;
+}
 header .logo{
     width: 125px;
 }
@@ -373,4 +402,45 @@ header .header_right .rel .num{
     border-radius: 50%;
     font-size: 10px;
 }
+.container { 
+  max-width:1000px; 
+  margin: 30px auto; 
+  padding:0 20px; 
+}
+h1, h2 { 
+  align-items: center;
+  text-align: center;
+  color:#4b9c9c; 
+}
 
+h2 { 
+  margin-top:30px; 
+}
+
+p { 
+  line-height:1.6; 
+  margin-top:10px; 
+  text-align: center;
+}
+
+.glossario dt { 
+  font-weight:bold; 
+  margin-top:15px;
+  text-align: center;
+}
+
+.glossario dd { 
+  margin-left:20px; 
+  margin-bottom:10px; 
+  text-align: center;
+}
+
+
+body { 
+  font-family: Arial, sans-serif; 
+  margin:0; 
+  padding:0; 
+  color:#333; 
+  background:#fafafa; 
+  text-align: center;
+}
