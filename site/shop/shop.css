@@ -419,6 +419,7 @@ header .header_right .rel .num{
     font-size: 30px;
     cursor: pointer;
     transition: 0.4s;
+    color: #000;
 }
 .footer_top .icons i:hover{
     color: gold;

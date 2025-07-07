@@ -382,7 +382,7 @@ header .header_right .rel .num{
 }
 
 .brand-box {
-  background-color: #fad591;
+  background-color: #91befa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,17 +431,6 @@ header .header_right .rel .num{
     header {
         padding: 4px 30px;
     }
-    .shop_category .food .food_items .img {
-        width: 40%;
-    }
-    .food_details {
-        padding-left: 15px;
-        padding-top: 10px;
-    }
-    .bf_banner .left_txt,
-    .bf_banner .right_txt {
-        width: 25%;
-    }
 }
 
 
@@ -455,58 +444,7 @@ header .header_right .rel .num{
     header .header_right i {
         margin-left: 15px;
     }
-    .banner .banner_txt {
-        width: 50%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-    .banner .banner_txt h1 {
-        font-size: 48px;
-    }
-    .facility {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .facility .f_item {
-        width: 45%;
-        margin-bottom: 20px;
-    }
-    .shop_category .food .food_items {
-        width: 100%;
-    }
-    .shop_category .pet_list .single_pet {
-        width: 48%;
-    }
-    .second_banner .txt {
-        width: 50%;
-    }
-    .second_banner .txt h2 {
-        font-size: 40px;
-    }
-    .feature_products_grid .fp_items {
-        width: 48%;
-    }
-    .two_banner .img {
-        width: 100%;
-    }
-    .two_banner .img .txt {
-        width: 90%;
-        left: 5%;
-    }
-    .latest_pro .latest_product .lp_items {
-        width: 100%;
-    }
-    .bf_banner .left_txt,
-    .bf_banner .right_txt {
-        width: 45%;
-        padding: 10px;
-    }
-    .bf_banner .bf_food {
-        width: 60%;
-        height: auto;
-    }
+   
     .footer_top {
         flex-direction: column;
         text-align: center;
@@ -533,86 +471,13 @@ header .header_right .rel .num{
     header {
         padding: 10px 20px;
     }
-    .banner .banner_txt h1 {
-        font-size: 36px;
-    }
-    .shop_category .pet_list .single_pet {
-        width: 45%;
-    }
-    .second_banner .txt h2 {
-        font-size: 32px;
-    }
-    .feature_products_grid .fp_items {
-        width: 90%;
-    }
-    .bf_banner {
-        height: auto;
-        padding: 20px 0;
-    }
-    .bf_banner .bf_food {
-        width: 80%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-    .bf_banner .left_txt,
-    .bf_banner .right_txt {
-        width: 80%;
-        text-align: center;
-        padding: 10px 0;
-    }
-    .bf_banner .right_txt {
-        text-align: center;
-    }
+    
     .footer_bottom .payment_link {
         width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    .banner .banner_txt p {
-        font-size: 13px;
-        padding-bottom: 15px;
-    }
-    .banner .banner_txt h1 {
-        font-size: 28px;
-    }
-    .facility .f_item {
-        width: 90%;
-    }
-    .shop_category .food .food_items .img {
-        width: 100%;
-        height: auto;
-    }
-    .shop_category .food .food_items {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .food_details {
-        padding: 15px;
-    }
-    .shop_category .pet_list .single_pet {
-        width: 90%;
-    }
-    .second_banner .txt h2 {
-        font-size: 26px;
-    }
-    .feature_products_grid .fp_items {
-        width: 95%;
-    }
-    .latest_pro .latest_product .lp_items {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .latest_pro .latest_product .lp_items .img {
-        width: 80%;
-        margin-bottom: 15px;
-    }
-    .latest_pro .latest_product .lp_items .lp_details {
-        width: 90%;
-        padding: 10px;
-    }
     .footer_bottom .payment_link i {
         font-size: 22px;
         padding: 10px;

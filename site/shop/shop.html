@@ -98,14 +98,14 @@
             <div class="rel">
                 <a href="/site/shop/favoritos/favoritos.html" title="Favoritos">
                     <i class="fa-solid fa-heart"></i>
-                    <span class="num">3</span>
+                    <span class="num" id="cart-count">0</span>
                 </a>
             </div>
 
             <div class="rel">
                 <a href="/site/shop/carrinho/carrinho.html" title="Carrinho">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="num">3</span>
+                    <span class="num" id="cart-count">0</span>
                 </a>
                 
             </div>
@@ -119,54 +119,10 @@
             <a href="#">Peixes</a>
             <a href="#">Outros pets</a>
             <a href="/site/shop/lojas/lojas.html">Lojas</a>
-            <a href="/site/site.html">Blog</a>
+            <a href="https://wa.me/+559293921850?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20banho%20e%20tosa!">Banho & Tosa</a>
             <a href="#" style="color: #f77b0e; font-weight: bold;">Promoções</a>
     </nav>
-    <script>
-        function toggleMenu() {
-        const dropdown = document.getElementById("userDropdown");
-        dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-        }
-
-        // Fechar o menu ao clicar fora
-        document.addEventListener("click", function(event) {
-        const menu = document.querySelector(".user-menu");
-        const dropdown = document.getElementById("userDropdown");
-        if (!menu.contains(event.target)) {
-            dropdown.style.display = "none";
-        }
-        });
-  </script>
-    <script>
-        const sidebar = document.getElementById("sidebarMenu");
-        const overlay = document.getElementById("sidebarOverlay");
-        const openBtn = document.getElementById("openSidebar"); // botão “Todos”
-        const closeBtn = document.getElementById("closeSidebar");
-
-        openBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            sidebar.classList.add("active");
-            overlay.classList.add("active");
-        });
-
-        closeBtn.addEventListener("click", () => {
-            sidebar.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-
-        overlay.addEventListener("click", () => {
-            sidebar.classList.remove("active");
-            overlay.classList.remove("active");
-        });
-    </script>
-    <script>
-        const toggleDropdown = document.querySelector('.dropdown-toggle');
-        const dropdownContent = document.querySelector('.dropdown-content');
-
-        toggleDropdown.addEventListener('click', () => {
-            dropdownContent.classList.toggle('active');
-        });
-    </script>
+    
 
 
 
@@ -215,33 +171,6 @@
             <small>Designed by Jordan Pinheiro</small>
         </div>
     </footer>
-    <script>
-        window.onscroll = function() {myFuction()};
-        var header = document.getElementById('myHeader')
-        var sticky = header.offsetTop;
-
-        function myFuction(){
-            if(window.pageYOffset > sticky){
-                header.classList.add('sticky');
-            }
-            else{ 
-                header.classList.remove('sticky');
-            }
-        }
-      </script>
-      
-      <script>
-         searchIcon = document.getElementById('search-icon');
-        const searchForm = document.getElementById('search-form');
-
-         searchIcon.addEventListener('click', function() {
-        // Alterna entre mostrar e esconder o formulário
-        if (searchForm.style.display === "none") {
-            searchForm.style.display = "flex";
-        } else {
-            searchForm.style.display = "none";
-        }
-         });
-        </script>
+    
 </body>
 </html>
