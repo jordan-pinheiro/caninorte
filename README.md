@@ -1,4 +1,4 @@
-# 🐾 Caninorte  
+# 🐾 Caninorte Site
 
 ## 📘 Sobre o Projeto  
 **Caninorte** é um e-commerce de produtos pet desenvolvido com foco em performance, usabilidade e escalabilidade.  
