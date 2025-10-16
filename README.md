@@ -1,121 +1,49 @@
-🐾 Caninorte
+# 🐾 Caninorte  
 
-📋 Sobre o Projeto
+## 📘 Sobre o Projeto  
+**Caninorte** é um e-commerce de produtos pet desenvolvido com foco em performance, usabilidade e escalabilidade.  
+O objetivo é oferecer uma plataforma completa para compra de produtos voltados a animais de estimação, como rações, brinquedos, acessórios e medicamentos.  
 
-Caninorte é uma plataforma de e-commerce voltada para o setor pet shop, oferecendo produtos para cães, gatos e outros animais domésticos.
-Inspirado em modelos como Cobasi e Petz, o site tem como objetivo proporcionar uma experiência de compra simples, intuitiva e responsiva, permitindo que o usuário encontre produtos facilmente e conclua suas compras com rapidez e segurança.
+O projeto busca simular uma loja virtual profissional, semelhante à **Cobasi**, com funcionalidades de carrinho, autenticação de usuário, e integração com banco de dados.  
 
-🎯 Objetivos
+## 🎯 Objetivos  
+- Oferecer uma experiência de compra fluida e responsiva  
+- Implementar um backend robusto e seguro para controle de pedidos e usuários  
+- Facilitar a busca e filtragem de produtos  
+- Integrar funcionalidades de carrinho e checkout  
 
-Facilitar a compra de produtos pet de forma online e acessível
+## 💻 Tecnologias Utilizadas  
 
-Proporcionar uma experiência de usuário moderna e intuitiva
+### Frontend  
+- **HTML5**, **CSS3**, **JavaScript**  
+- Design responsivo com **Flexbox** e **Grid**  
+- **Animações** e **interatividade** com JS puro  
 
-Integrar catálogo, carrinho e sistema de pagamentos
+### Backend  
+- **Node.js** + **Express** — API RESTful  
+- **MySQL** — Banco de dados relacional  
+- **Sequelize** — ORM para manipulação de dados  
 
-Gerenciar produtos, categorias e estoque com segurança
+## ⚙️ Funcionalidades  
+- Cadastro e login de usuários  
+- Listagem e busca de produtos  
+- Carrinho de compras e cálculo de total  
+- Controle de estoque e gerenciamento de pedidos  
+- Painel administrativo para gestão de produtos  
 
-🚀 Tecnologias Utilizadas
-Backend
+## 📦 Como Executar o Projeto  
+```bash
+# Clone o repositório
+git clone https://github.com/teuusuario/caninorte.git
 
-Node.js – Ambiente de execução JavaScript
+# Acesse a pasta do projeto
+cd caninorte
 
-Express – Framework para criação da API
-
-MySQL – Banco de dados relacional
-
-Sequelize – ORM para integração com o MySQL
-
-JWT – Autenticação de usuários
-
-Bcrypt – Criptografia de senhas
-
-Axios – Requisições entre serviços
-
-Frontend
-
-HTML5 / CSS3 / JavaScript (ES6)
-
-React (opcional) – Para páginas dinâmicas e SPA
-
-Bootstrap / Tailwind – Design responsivo e moderno
-
-SweetAlert2 – Alertas e notificações amigáveis
-
-🏗️ Estrutura do Projeto
-caninorte/
-├── backend/
-│   ├── config/          # Configurações do banco e ambiente
-│   ├── controllers/     # Controladores das rotas
-│   ├── models/          # Modelos do Sequelize
-│   ├── routes/          # Rotas da API
-│   ├── middleware/      # Autenticação e validações
-│   └── server.js        # Ponto de entrada do servidor
-│
-└── frontend/
-    ├── assets/          # Imagens e ícones
-    ├── css/             # Estilos da aplicação
-    ├── js/              # Scripts e funções
-    ├── pages/           # Páginas (home, produtos, carrinho)
-    └── index.html       # Página principal
-
-🌟 Funcionalidades
-👤 Usuário
-
-Cadastro e login com autenticação JWT
-
-Edição de perfil e histórico de compras
-
-Carrinho de compras e finalização de pedido
-
-🛒 Produtos
-
-Catálogo dinâmico com categorias e filtros
-
-Página de detalhes de produtos
-
-Sistema de busca e recomendação
-
-⚙️ Administração
-
-CRUD de produtos, categorias e estoque
-
-Controle de pedidos e usuários
-
-Painel administrativo seguro
-
-💳 Pagamentos
-
-Integração com API de pagamentos (ex: Stripe / Mercado Pago)
-
-Cálculo de frete e descontos
-
-🔧 Instalação
-Backend
-cd caninorte/backend
+# Instale as dependências
 npm install
-npm run dev
 
-Frontend
+# Configure o banco de dados
+npx sequelize db:migrate
 
-Abra o index.html no navegador ou use Live Server (VSCode).
-
-📱 Telas Principais
-
-Home: destaque de produtos e promoções
-
-Categorias: listagem filtrada por tipo de produto
-
-Carrinho: resumo e finalização da compra
-
-Dashboard Admin: gestão de estoque, pedidos e usuários
-
-📊 Fluxo de Dados
-
-O usuário interage com o frontend
-
-As requisições são enviadas via Axios à API Node.js
-
-A API manipula os dados no MySQL através do Sequelize
-
-O frontend exibe as respostas (produtos, pedidos, etc.)
+# Inicie o servidor
+npm start
